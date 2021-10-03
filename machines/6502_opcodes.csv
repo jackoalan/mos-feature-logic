@@ -1,0 +1,16 @@
+BRK,ORAizx,KIL,SLOizx,NOPzp,ORAzp,ASLzp,SLOzp,PHP,ORAimm,ASL,ANCimm,NOPabs,ORAabs,ASLabs,SLOabs
+BPLrel,ORAizy,KIL,SLOizy,NOPzpx,ORAzpx,ASLzpx,SLOzpx,CLC,ORAaby,NOP,SLOaby,NOPabx,ORAabx,ASLabx,SLOabx
+JSRabs,ANDizx,KIL,RLAizx,BITzp,ANDzp,ROLzp,RLAzp,PLP,ANDimm,ROL,ANCimm,BITabs,ANDabs,ROLabs,RLAabs
+BMIrel,ANDizy,KIL,RLAizy,NOPzpx,ANDzpx,ROLzpx,RLAzpx,SEC,ANDaby,NOP,RLAaby,NOPabx,ANDabx,ROLabx,RLAabx
+RTI,EORizx,KIL,SREizx,NOPzp,EORzp,LSRzp,SREzp,PHA,EORimm,LSR,ALRimm,JMPabs,EORabs,LSRabs,SREabs
+BVCrel,EORizy,KIL,SREizy,NOPzpx,EORzpx,LSRzpx,SREzpx,CLI,EORaby,NOP,SREaby,NOPabx,EORabx,LSRabx,SREabx
+RTS,ADCizx,KIL,RRAizx,NOPzp,ADCzp,RORzp,RRAzp,PLA,ADCimm,ROR,ARRimm,JMPind,ADCabs,RORabs,RRAabs
+BVSrel,ADCizy,KIL,RRAizy,NOPzpx,ADCzpx,RORzpx,RRAzpx,SEI,ADCaby,NOP,RRAaby,NOPabx,ADCabx,RORabx,RRAabx
+NOPimm,STAizx,NOPimm,SAXizx,STYzp,STAzp,STXzp,SAXzp,DEY,NOPimm,TXA,XAAimm,STYabs,STAabs,STXabs,SAXabs
+BCCrel,STAizy,KIL,AHXizy,STYzpx,STAzpx,STXzpy,SAXzpy,TYA,STAaby,TXS,TASaby,SHYabx,STAabx,SHXaby,AHXaby
+LDYimm,LDAizx,LDXimm,LAXizx,LDYzp,LDAzp,LDXzp,LAXzp,TAY,LDAimm,TAX,LAXimm,LDYabs,LDAabs,LDXabs,LAXabs
+BCSrel,LDAizy,KIL,LAXizy,LDYzpx,LDAzpx,LDXzpy,LAXzpy,CLV,LDAaby,TSX,LASaby,LDYabx,LDAabx,LDXaby,LAXaby
+CPYimm,CMPizx,NOPimm,DCPizx,CPYzp,CMPzp,DECzp,DCPzp,INY,CMPimm,DEX,AXSimm,CPYabs,CMPabs,DECabs,DCPabs
+BNErel,CMPizy,KIL,DCPizy,NOPzpx,CMPzpx,DECzpx,DCPzpx,CLD,CMPaby,NOP,DCPaby,NOPabx,CMPabx,DECabx,DCPabx
+CPXimm,SBCizx,NOPimm,ISCizx,CPXzp,SBCzp,INCzp,ISCzp,INX,SBCimm,NOP,SBCimm,CPXabs,SBCabs,INCabs,ISCabs
+BEQrel,SBCizy,KIL,ISCizy,NOPzpx,SBCzpx,INCzpx,ISCzpx,SED,SBCaby,NOP,ISCaby,NOPabx,SBCabx,INCabx,ISCabx
