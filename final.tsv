@@ -1,257 +1,257 @@
 	('6502', '65816', '65C02', '65CE02')	('6502', '~65816', '65C02', '~65CE02')	('6502', '~65816', '~65C02', '~65CE02')	('~6502', '65816', '65C02', '65CE02')	('~6502', '65816', '65C02', '~65CE02')	('~6502', '65816', '~65C02', '~65CE02')	('~6502', '~65816', '65C02', '65CE02')	('~6502', '~65816', '65C02', '~65CE02')	('~6502', '~65816', '~65C02', '65CE02')
-0x0	BRK
-0x1	ORAizx
+0x0	BRK								
+0x1	ORAizx								
 0x2			KIL			COPimm		NOPimm	CLE
 0x3			SLOizx			ORAsr		NOP	SEE
-0x4			NOPzp	TSBzp
-0x5	ORAzp
-0x6	ASLzp
-0x7			SLOzp			ORAidl	RMB0zp
-0x8	PHP
-0x9	ORAimm
-0xa	ASL
+0x4			NOPzp	TSBzp					
+0x5	ORAzp								
+0x6	ASLzp								
+0x7			SLOzp			ORAidl	RMB0zp		
+0x8	PHP								
+0x9	ORAimm								
+0xa	ASL								
 0xb			ANCimm			PHD		NOP	TSY
-0xc			NOPabs	TSBabs
-0xd	ORAabs
-0xe	ASLabs
-0xf			SLOabs			ORAabl	BBR0rel
-0x10	BPLrel
-0x11	ORAizy
+0xc			NOPabs	TSBabs					
+0xd	ORAabs								
+0xe	ASLabs								
+0xf			SLOabs			ORAabl	BBR0rel		
+0x10	BPLrel								
+0x11	ORAizy								
 0x12			KIL		ORAizp				ORAizz
 0x13			SLOizy			ORAisy		NOP	BPLrell
-0x14			NOPzpx	TRBzp
-0x15	ORAzpx
-0x16	ASLzpx
-0x17			SLOzpx			ORAidly	RMB1zp
-0x18	CLC
-0x19	ORAaby
-0x1a			NOP	INC
+0x14			NOPzpx	TRBzp					
+0x15	ORAzpx								
+0x16	ASLzpx								
+0x17			SLOzpx			ORAidly	RMB1zp		
+0x18	CLC								
+0x19	ORAaby								
+0x1a			NOP	INC					
 0x1b			SLOaby			TCS		NOP	INZ
-0x1c			NOPabx	TRBabs
-0x1d	ORAabx
-0x1e	ASLabx
-0x1f			SLOabx			ORAalx	BBR1rel
-0x20	JSRabs
-0x21	ANDizx
+0x1c			NOPabx	TRBabs					
+0x1d	ORAabx								
+0x1e	ASLabx								
+0x1f			SLOabx			ORAalx	BBR1rel		
+0x20	JSRabs								
+0x21	ANDizx								
 0x22			KIL			JSRabl		NOPimm	JSRind
 0x23			RLAizx			ANDsr		NOP	JSRiax
-0x24	BITzp
-0x25	ANDzp
-0x26	ROLzp
-0x27			RLAzp			ANDidl	RMB2zp
-0x28	PLP
-0x29	ANDimm
-0x2a	ROL
+0x24	BITzp								
+0x25	ANDzp								
+0x26	ROLzp								
+0x27			RLAzp			ANDidl	RMB2zp		
+0x28	PLP								
+0x29	ANDimm								
+0x2a	ROL								
 0x2b			ANCimm			PLD		NOP	TYS
-0x2c	BITabs
-0x2d	ANDabs
-0x2e	ROLabs
-0x2f			RLAabs			ANDabl	BBR2rel
-0x30	BMIrel
-0x31	ANDizy
+0x2c	BITabs								
+0x2d	ANDabs								
+0x2e	ROLabs								
+0x2f			RLAabs			ANDabl	BBR2rel		
+0x30	BMIrel								
+0x31	ANDizy								
 0x32			KIL		ANDizp				ANDizz
 0x33			RLAizy			ANDisy		NOP	BMIrell
-0x34			NOPzpx	BITzpx
-0x35	ANDzpx
-0x36	ROLzpx
-0x37			RLAzpx			ANDidly	RMB3zp
-0x38	SEC
-0x39	ANDaby
-0x3a			NOP	DEC
+0x34			NOPzpx	BITzpx					
+0x35	ANDzpx								
+0x36	ROLzpx								
+0x37			RLAzpx			ANDidly	RMB3zp		
+0x38	SEC								
+0x39	ANDaby								
+0x3a			NOP	DEC					
 0x3b			RLAaby			TSC		NOP	DEZ
-0x3c			NOPabx	BITabx
-0x3d	ANDabx
-0x3e	ROLabx
-0x3f			RLAabx			ANDalx	BBR3rel
-0x40	RTI
-0x41	EORizx
+0x3c			NOPabx	BITabx					
+0x3d	ANDabx								
+0x3e	ROLabx								
+0x3f			RLAabx			ANDalx	BBR3rel		
+0x40	RTI								
+0x41	EORizx								
 0x42			KIL			WDMimm		NOPimm	NEG
 0x43			SREizx			EORsr		NOP	ASR
 0x44		NOPzp				MVPbm			ASRzp
-0x45	EORzp
-0x46	LSRzp
-0x47			SREzp			EORidl	RMB4zp
-0x48	PHA
-0x49	EORimm
-0x4a	LSR
+0x45	EORzp								
+0x46	LSRzp								
+0x47			SREzp			EORidl	RMB4zp		
+0x48	PHA								
+0x49	EORimm								
+0x4a	LSR								
 0x4b			ALRimm			PHK		NOP	TAZ
-0x4c	JMPabs
-0x4d	EORabs
-0x4e	LSRabs
-0x4f			SREabs			EORabl	BBR4rel
-0x50	BVCrel
-0x51	EORizy
+0x4c	JMPabs								
+0x4d	EORabs								
+0x4e	LSRabs								
+0x4f			SREabs			EORabl	BBR4rel		
+0x50	BVCrel								
+0x51	EORizy								
 0x52			KIL		EORizp				EORizz
 0x53			SREizy			EORisy		NOP	BVCrell
 0x54		NOPzpx				MVNbm			ASRzpx
-0x55	EORzpx
-0x56	LSRzpx
-0x57			SREzpx			EORidly	RMB5zp
-0x58	CLI
-0x59	EORaby
-0x5a			NOP	PHY
+0x55	EORzpx								
+0x56	LSRzpx								
+0x57			SREzpx			EORidly	RMB5zp		
+0x58	CLI								
+0x59	EORaby								
+0x5a			NOP	PHY					
 0x5b			SREaby			TCD		NOP	TAB
 0x5c			NOPabx			JMPabl		NOPabs	MAP
-0x5d	EORabx
-0x5e	LSRabx
-0x5f			SREabx			EORalx	BBR5rel
-0x60	RTS
-0x61	ADCizx
+0x5d	EORabx								
+0x5e	LSRabx								
+0x5f			SREabx			EORalx	BBR5rel		
+0x60	RTS								
+0x61	ADCizx								
 0x62			KIL			PERrell		NOPimm	RTSimm
 0x63			RRAizx			ADCsr		NOP	BSRrell
-0x64			NOPzp	STZzp
-0x65	ADCzp
-0x66	RORzp
-0x67			RRAzp			ADCidl	RMB6zp
-0x68	PLA
-0x69	ADCimm
-0x6a	ROR
+0x64			NOPzp	STZzp					
+0x65	ADCzp								
+0x66	RORzp								
+0x67			RRAzp			ADCidl	RMB6zp		
+0x68	PLA								
+0x69	ADCimm								
+0x6a	ROR								
 0x6b			ARRimm			RTL		NOP	TZA
-0x6c	JMPind
-0x6d	ADCabs
-0x6e	RORabs
-0x6f			RRAabs			ADCabl	BBR6rel
-0x70	BVSrel
-0x71	ADCizy
+0x6c	JMPind								
+0x6d	ADCabs								
+0x6e	RORabs								
+0x6f			RRAabs			ADCabl	BBR6rel		
+0x70	BVSrel								
+0x71	ADCizy								
 0x72			KIL		ADCizp				ADCizz
 0x73			RRAizy			ADCisy		NOP	BVSrell
-0x74			NOPzpx	STZzpx
-0x75	ADCzpx
-0x76	RORzpx
-0x77			RRAzpx			ADCidly	RMB7zp
-0x78	SEI
-0x79	ADCaby
-0x7a			NOP	PLY
+0x74			NOPzpx	STZzpx					
+0x75	ADCzpx								
+0x76	RORzpx								
+0x77			RRAzpx			ADCidly	RMB7zp		
+0x78	SEI								
+0x79	ADCaby								
+0x7a			NOP	PLY					
 0x7b			RRAaby			TDC		NOP	TBA
-0x7c			NOPabx			JMPial	JMPiax
-0x7d	ADCabx
-0x7e	RORabx
-0x7f			RRAabx			ADCalx	BBR7rel
-0x80			NOPimm	BRArel
-0x81	STAizx
+0x7c			NOPabx			JMPial	JMPiax		
+0x7d	ADCabx								
+0x7e	RORabx								
+0x7f			RRAabx			ADCalx	BBR7rel		
+0x80			NOPimm	BRArel					
+0x81	STAizx								
 0x82		NOPimm				BRLrell			STAisy
 0x83			SAXizx			STAsr		NOP	BRArell
-0x84	STYzp
-0x85	STAzp
-0x86	STXzp
-0x87			SAXzp			STAidl	SMB0zp
-0x88	DEY
-0x89			NOPimm	BITimm
-0x8a	TXA
+0x84	STYzp								
+0x85	STAzp								
+0x86	STXzp								
+0x87			SAXzp			STAidl	SMB0zp		
+0x88	DEY								
+0x89			NOPimm	BITimm					
+0x8a	TXA								
 0x8b			XAAimm			PHB		NOP	STYabx
-0x8c	STYabs
-0x8d	STAabs
-0x8e	STXabs
-0x8f			SAXabs			STAabl	BBS0rel
-0x90	BCCrel
-0x91	STAizy
+0x8c	STYabs								
+0x8d	STAabs								
+0x8e	STXabs								
+0x8f			SAXabs			STAabl	BBS0rel		
+0x90	BCCrel								
+0x91	STAizy								
 0x92			KIL		STAizp				STAizz
 0x93			AHXizy			STAisy		NOP	BCCrell
-0x94	STYzpx
-0x95	STAzpx
-0x96	STXzpy
-0x97			SAXzpy			STAidly	SMB1zp
-0x98	TYA
-0x99	STAaby
-0x9a	TXS
+0x94	STYzpx								
+0x95	STAzpx								
+0x96	STXzpy								
+0x97			SAXzpy			STAidly	SMB1zp		
+0x98	TYA								
+0x99	STAaby								
+0x9a	TXS								
 0x9b			TASaby			TXY		NOP	STXaby
-0x9c			SHYabx	STZabs
-0x9d	STAabx
-0x9e			SHXaby	STZabx
-0x9f			AHXaby			STAalx	BBS1rel
-0xa0	LDYimm
-0xa1	LDAizx
-0xa2	LDXimm
+0x9c			SHYabx	STZabs					
+0x9d	STAabx								
+0x9e			SHXaby	STZabx					
+0x9f			AHXaby			STAalx	BBS1rel		
+0xa0	LDYimm								
+0xa1	LDAizx								
+0xa2	LDXimm								
 0xa3			LAXizx			LDAsr		NOP	LDZimm
-0xa4	LDYzp
-0xa5	LDAzp
-0xa6	LDXzp
-0xa7			LAXzp			LDAidl	SMB2zp
-0xa8	TAY
-0xa9	LDAimm
-0xaa	TAX
+0xa4	LDYzp								
+0xa5	LDAzp								
+0xa6	LDXzp								
+0xa7			LAXzp			LDAidl	SMB2zp		
+0xa8	TAY								
+0xa9	LDAimm								
+0xaa	TAX								
 0xab			LAXimm			PLB		NOP	LDZabs
-0xac	LDYabs
-0xad	LDAabs
-0xae	LDXabs
-0xaf			LAXabs			LDAabl	BBS2rel
-0xb0	BCSrel
-0xb1	LDAizy
+0xac	LDYabs								
+0xad	LDAabs								
+0xae	LDXabs								
+0xaf			LAXabs			LDAabl	BBS2rel		
+0xb0	BCSrel								
+0xb1	LDAizy								
 0xb2			KIL		LDAizp				LDAizz
 0xb3			LAXizy			LDAisy		NOP	BCSrell
-0xb4	LDYzpx
-0xb5	LDAzpx
-0xb6	LDXzpy
-0xb7			LAXzpy			LDAidly	SMB3zp
-0xb8	CLV
-0xb9	LDAaby
-0xba	TSX
+0xb4	LDYzpx								
+0xb5	LDAzpx								
+0xb6	LDXzpy								
+0xb7			LAXzpy			LDAidly	SMB3zp		
+0xb8	CLV								
+0xb9	LDAaby								
+0xba	TSX								
 0xbb			LASaby			TYX		NOP	LDZabx
-0xbc	LDYabx
-0xbd	LDAabx
-0xbe	LDXaby
-0xbf			LAXaby			LDAalx	BBS3rel
-0xc0	CPYimm
-0xc1	CMPizx
+0xbc	LDYabx								
+0xbd	LDAabx								
+0xbe	LDXaby								
+0xbf			LAXaby			LDAalx	BBS3rel		
+0xc0	CPYimm								
+0xc1	CMPizx								
 0xc2		NOPimm				REPimm			CPZimm
 0xc3			DCPizx			CMPsr		NOP	DEWzp
-0xc4	CPYzp
-0xc5	CMPzp
-0xc6	DECzp
-0xc7			DCPzp			CMPidl	SMB4zp
-0xc8	INY
-0xc9	CMPimm
-0xca	DEX
+0xc4	CPYzp								
+0xc5	CMPzp								
+0xc6	DECzp								
+0xc7			DCPzp			CMPidl	SMB4zp		
+0xc8	INY								
+0xc9	CMPimm								
+0xca	DEX								
 0xcb			AXSimm		WAI				ASWabs
-0xcc	CPYabs
-0xcd	CMPabs
-0xce	DECabs
-0xcf			DCPabs			CMPabl	BBS4rel
-0xd0	BNErel
-0xd1	CMPizy
+0xcc	CPYabs								
+0xcd	CMPabs								
+0xce	DECabs								
+0xcf			DCPabs			CMPabl	BBS4rel		
+0xd0	BNErel								
+0xd1	CMPizy								
 0xd2			KIL		CMPizp				CMPizz
 0xd3			DCPizy			CMPisy		NOP	BNErell
 0xd4		NOPzpx				PEIizp			CPZzp
-0xd5	CMPzpx
-0xd6	DECzpx
-0xd7			DCPzpx			CMPidly	SMB5zp
-0xd8	CLD
-0xd9	CMPaby
-0xda			NOP	PHX
+0xd5	CMPzpx								
+0xd6	DECzpx								
+0xd7			DCPzpx			CMPidly	SMB5zp		
+0xd8	CLD								
+0xd9	CMPaby								
+0xda			NOP	PHX					
 0xdb			DCPaby		STP				PHZ
 0xdc			NOPabx			JMPiax		NOPabs	CPZabs
-0xdd	CMPabx
-0xde	DECabx
-0xdf			DCPabx			CMPalx	BBS5rel
-0xe0	CPXimm
-0xe1	SBCizx
+0xdd	CMPabx								
+0xde	DECabx								
+0xdf			DCPabx			CMPalx	BBS5rel		
+0xe0	CPXimm								
+0xe1	SBCizx								
 0xe2		NOPimm				SEPimm			LDAisy
 0xe3			ISCizx			SBCsr		NOP	INWzp
-0xe4	CPXzp
-0xe5	SBCzp
-0xe6	INCzp
-0xe7			ISCzp			SBCidl	SMB6zp
-0xe8	INX
-0xe9	SBCimm
-0xea	NOP
+0xe4	CPXzp								
+0xe5	SBCzp								
+0xe6	INCzp								
+0xe7			ISCzp			SBCidl	SMB6zp		
+0xe8	INX								
+0xe9	SBCimm								
+0xea	NOP								
 0xeb			SBCimm			XBA		NOP	ROWabs
-0xec	CPXabs
-0xed	SBCabs
-0xee	INCabs
-0xef			ISCabs			SBCabl	BBS6rel
-0xf0	BEQrel
-0xf1	SBCizy
+0xec	CPXabs								
+0xed	SBCabs								
+0xee	INCabs								
+0xef			ISCabs			SBCabl	BBS6rel		
+0xf0	BEQrel								
+0xf1	SBCizy								
 0xf2			KIL		SBCizp				SBCizz
 0xf3			ISCizy			SBCisy		NOP	BEQrell
 0xf4		NOPzpx				PEAabs			PHWimw
-0xf5	SBCzpx
-0xf6	INCzpx
-0xf7			ISCzpx			SBCidly	SMB7zp
-0xf8	SED
-0xf9	SBCaby
-0xfa			NOP	PLX
+0xf5	SBCzpx								
+0xf6	INCzpx								
+0xf7			ISCzpx			SBCidly	SMB7zp		
+0xf8	SED								
+0xf9	SBCaby								
+0xfa			NOP	PLX					
 0xfb			ISCaby			XCE		NOP	PLZ
 0xfc			NOPabx			JSRiax		NOPabs	PHWabs
-0xfd	SBCabx
-0xfe	INCabx
-0xff			ISCabx			SBCalx	BBS7rel
+0xfd	SBCabx								
+0xfe	INCabx								
+0xff			ISCabx			SBCalx	BBS7rel		
