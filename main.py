@@ -126,7 +126,14 @@ if __name__ == '__main__':
 
     finder = CombinationFinder()
     arrs = []
-    for machine_set, features in finder.run(path):
+    all_features = []
+    combinations = finder.run(path)
+    for machine_set, features in combinations:
+        opcodes, machine_features = features
+        for machine_feature in machine_features:
+            if machine_feature not in all_features:
+                all_features.append(machine_feature)
+    for machine_set, features in combinations:
         opcodes, machine_features = features
         machine_set_name = MACHINE_SET_ALIASES.get(machine_set, machine_set)
 
@@ -139,16 +146,29 @@ if __name__ == '__main__':
         print(']')
 
         print(f'{machine_set_name} features=[')
-        for machine_features in machine_features:
-            print(f'  \'{machine_features}\',')
+        for machine_feature in machine_features:
+            print(f'  \'{machine_feature}\',')
         print(']')
+
+        for machine_feature in all_features:
+            if machine_feature in machine_features:
+                arr_out.append('X')
+            else:
+                arr_out.append('')
 
         arr_out2 = [str(machine_set)]
         arr_out2.extend(arr_out)
         arrs.append(arr_out2)
 
-    for i in range(257):
+    for i in range(257 + len(all_features)):
         items = ['' if i == 0 else hex(i - 1)]
+        if i == 0:
+            items = ['']
+        elif 1 <= i <= 256:
+            items = [hex(i - 1)]
+        else:
+            items = [all_features[i - 257]]
+
         for arr in arrs:
             items.append(arr[i])
         print('\t'.join(items))
