@@ -1,6 +1,6 @@
 BRK,ORAizx,CLE,SEE,TSBzp,ORAzp,ASLzp,RMB0zp,PHP,ORAimm,ASL,TSY,TSBabs,ORAabs,ASLabs,BBR0rel
 BPLrel,ORAizy,ORAizz,BPLrell,TRBzp,ORAzpx,ASLzpx,RMB1zp,CLC,ORAaby,INC,INZ,TRBabs,ORAabx,ASLabx,BBR1rel
-JSRabs,ANDizx,JSRiab,JSRiax,BITzp,ANDzp,ROLzp,RMB2zp,PLP,ANDimm,ROL,TYS,BITabs,ANDabs,ROLabs,BBR2rel
+JSRabs,ANDizx,JSRind,JSRiax,BITzp,ANDzp,ROLzp,RMB2zp,PLP,ANDimm,ROL,TYS,BITabs,ANDabs,ROLabs,BBR2rel
 BMIrel,ANDizy,ANDizz,BMIrell,BITzpx,ANDzpx,ROLzpx,RMB3zp,SEC,ANDaby,DEC,DEZ,BITabx,ANDabx,ROLabx,BBR3rel
 RTI,EORizx,NEG,ASR,ASRzp,EORzp,LSRzp,RMB4zp,PHA,EORimm,LSR,TAZ,JMPabs,EORabs,LSRabs,BBR4rel
 BVCrel,EORizy,EORizz,BVCrell,ASRzpx,EORzpx,LSRzpx,RMB5zp,CLI,EORaby,PHY,TAB,MAP,EORabx,LSRabx,BBR5rel
